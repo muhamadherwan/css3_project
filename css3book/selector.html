@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selector</title>
+        <style>
+            p {
+                text-align: center;
+                color: red;
+            }
+
+            /* style only for p with id=paraid */
+            p#paraid {
+                text-align: center;
+                color: green;
+            }
+
+            /* style only for p with class=paraclass */
+            p.paraclass {
+                text-align: center;
+                color: blue;
+            }
+
+            p.large {
+                font-size:300%;
+            }
+
+            /* universal selector */
+            * {
+                text-align:center;
+                color:yellow;
+            }
+            
+            /* grouping */
+            h1, h2, div {
+                text-align:center;
+                color:blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <p id="paraid">Paragraph with id = paraid</p>
+        <p class="paraclass">Paragraph with class = paraclass</p>
+        <p class="paraclass large">Paragraph with paraclass and large.</p>
+        <div>This is a div</div>
+    </body>
+</html>
