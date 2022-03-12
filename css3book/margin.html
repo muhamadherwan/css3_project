@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Margin Properties</title>
+  <style>
+    body {
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h2 {
+      color: green;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    div.individual {
+      border: 1px solid white;
+      margin-top: 100px;
+      margin-right: 150px;
+      margin-bottom: 100px;
+      margin-left: 80px;
+      background-color: green;
+    }
+
+    div.s4 {
+      border: 1px solid black;
+      margin: 25px 50px 75px 100px;
+      background-color: green;
+    }
+
+    div.s3 {
+      border: 1px solid white;
+      margin: 25px 50px 75px;
+      background-color: green;
+    }
+
+    div.s2 {
+      border: 1px solid white;
+      margin: 25px 50px;
+      background-color: green;
+    }
+
+    div.s1 {
+      border: 1px solid white;
+      margin: 25px;
+      background-color: green;
+    }
+
+    div.auto {
+      width: 300px;
+      margin: auto;
+      border: 1px solid white;
+      background-color: green;
+    }
+
+    p.exs1 {
+      margin-left: inherit;
+    }
+  </style>
+  <body>
+    <h2>Using margin properties individual:</h2>
+    <div class="individual">
+      This div element has a top margin of 100px, a right margin of 150px; a
+      bottom margin of 100px, and a left margin of 80px.
+    </div>
+    <h2>Using margin property with 4 values:</h2>
+    <div class="s4">margin 25px 50px 75px 100px</div>
+    <h2>Using margin property with 3 values:</h2>
+    <div class="s3">
+      margin: 25px 50px 75px
+      <br />
+      <ul>
+        <li>margin top: 25px</li>
+        <li>margin right and left: 50px</li>
+        <li>margin bottom 75px</li>
+      </ul>
+    </div>
+    <h2>Using margin property with 2 values:</h2>
+    <div class="s2">
+      margin 25px 50px
+      <ul>
+        <li>top and bottom margin: 25px</li>
+        <li>right and left margin: 50px</li>
+      </ul>
+    </div>
+    <h2>Using margin property with one value:</h2>
+    <div class="s1">
+      margin: 25px;
+      <ul>
+        <li>all four margins are 25px</li>
+      </ul>
+      <p class="exs1">
+        this paragraph inherit left margin from the parent div element.
+      </p>
+    </div>
+
+    <h2>Auto margin.</h2>
+    <div class="auto">
+      This div will be horizontally center because it has margin auto;
+    </div>
+  </body>
+</html>
