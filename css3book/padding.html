@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CSS Padding element.</title>
+    <style>
+      body {
+        color: green;
+        background-color: black;
+      }
+
+      div.individual {
+        border: 1px solid white;
+        background-color: green;
+        color: black;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        padding-left: 80px;
+      }
+
+      div.s4 {
+        background-color: green;
+        border: 1px solid white;
+        color: black;
+        padding: 25px 50px 75px 100px;
+      }
+
+      div.s3 {
+        background-color: green;
+        border: 1px solid white;
+        color: black;
+        padding: 25px 50px 75px;
+      }
+
+      div.s2 {
+        background-color: green;
+        border: 1px solid white;
+        color: black;
+        padding: 25px 50px;
+      }
+
+      div.s1 {
+        background-color: green;
+        border: 1px solid white;
+        color: black;
+        padding: 25px;
+      }
+
+      div.ex1 {
+        width: 300px;
+        background-color: yellow;
+        color: black;
+      }
+
+      div.ex2 {
+        width: 300px;
+        padding: 25px;
+        box-sizing: border-box;
+        background-color: green;
+        color: black;
+      }
+
+      p.left1 {
+        padding-left: 2cm;
+      }
+
+      p.left2 {
+        padding-left: 50%;
+      }
+
+      p.right1 {
+        padding-right: 2cm;
+      }
+
+      p.right2 {
+        padding-right: 50%;
+      }
+
+      p.top1 {
+        padding-top: 2cm;
+      }
+
+      p.top1 {
+        padding-top: 50%;
+      }
+
+      p.bottom1 {
+        padding-bottom: 2cm;
+      }
+
+      p.bottom2 {
+        padding-bottom: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using individual padding properties:</h2>
+    <div class="individual">
+      This div element has top padding of 50px, right padding of 30px, bottom
+      padding of 50px and left padding of 80px.
+    </div>
+    <h2>Using 4 values for padding properties shorthand:</h2>
+    <div class="s4">
+      padding: 25px 50px 75px 100px;
+      <ul>
+        <li>top padding is 5px</li>
+        <li>right padding is 50px</li>
+        <li>bottom padding is 75px</li>
+        <li>left padding is 100px</li>
+      </ul>
+    </div>
+    <h2>Using 3 values for padding shorthand:</h2>
+    <div class="s3">
+      padding: 25px 50px 75px;
+      <ul>
+        <li>top padding is 25px</li>
+        <li>right and left padding are 50px</li>
+        <li>bottom padding is 75px</li>
+      </ul>
+    </div>
+    <h2>
+      Using 2 values for padding property shorthand:
+    </h2>
+    <div class="s2">
+      padding: 25px 50px;
+      <ul>
+        <li>top and bottom padding are 25px</li>
+        <li>right and left padding are 50px</li>
+      </ul>
+    </div>
+    <h2>Using 1 value for padding property shorthand:</h2>
+    <div class="s1">
+      padding: 25px;
+      <ul>
+        <li>top padding is 25px</li>
+        <li>right padding is 25px</li>
+        <li>bottom padding is 25px</li>
+        <li>left padding is 25px</li>
+      </ul>
+    </div>
+    <h2>Padding and element width - with box-sizing</h2>
+    <div class="ex1">This div is 300px wide.</div>
+    <br />
+    <div class="ex2">
+      The width of this div remains at 300px, in spite of the 50px of the total
+      left and right padding, because the box-sizing: border-box proverty.
+    </div>
+    <h2>The padding-left property</h2>
+    <p>This is text with no left padding.</p>
+    <p class="left1">This text has a left padding of 2cm.</p>
+    <p class="left2">This text has a left padding of 50%.</p>
+
+    <h2>The padding-right property</h2>
+    <p class="right1">
+      This text has right padding of 2cm.This text has right padding of 2cm.
+    </p>
+    <p class="right2">
+      This text has left padding of 50%.This text has left padding of 50%.
+    </p>
+
+    <h2>The padding-top property</h2>
+    <p class="top1">
+      This text has top padding of 2cm.
+      <br />
+      This text has top padding of 2cm.
+      <br />
+      This text has top padding of 2cm.
+    </p>
+    <p class="top2">
+      This text has top padding of 50%.
+      <br />
+      This text has top padding of 50%.
+      <br />
+      This text has top padding of 50%.
+    </p>
+    <h2>The padding-bottom property</h2>
+    <p class="bottom1">
+      This text has padding-botton property of 2cm.
+      <br />
+      This text has padding-botton property of 2cm.
+      <br />
+      This text has padding-botton property of 2cm.
+    </p>
+    <p class="bottom2">
+      This text has padding-bottom property of 50%.
+      <br />
+      This text has padding-bottom property of 50%.
+      <br />
+      This text has padding-bottom property of 50%.
+    </p>
+  </body>
+</html>
