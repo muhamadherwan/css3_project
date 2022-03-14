@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-with, initial-scale=1.0" />
+    <style>
+      p {
+        outline-color: red;
+      }
+
+      p.dotted {
+        outline-style: dotted;
+      }
+
+      p.dashed {
+        outline-style: dashed;
+      }
+
+      p.solid {
+        outline-style: solid;
+      }
+
+      p.double {
+        outline-style: double;
+      }
+
+      p.groove {
+        outline-style: groove;
+      }
+
+      p.ridge {
+        outline-style: ridge;
+      }
+
+      p.inset {
+        outline-style: inset;
+      }
+
+      p.outset {
+        outline-style: outset;
+      }
+
+      p.one {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: thin;
+      }
+
+      p.two {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: medium;
+      }
+
+      p.three {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: thick;
+      }
+
+      p.four {
+        border: 1px solid black;
+        outline-style: solid;
+        outline-color: red;
+        outline-width: 4px;
+      }
+
+      p.five {
+        border: 1px solid black;
+        outline: 5px dashed green;
+      }
+
+      p.six {
+        margin: 30px;
+        border: 1px solid black;
+        outline: 1px solid red;
+        outline-offset: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Outline-style property</h2>
+    <p class="dotted">Dotted outline</p>
+    <p class="dashed">Dashed outline</p>
+    <p class="solid">Solid outline</p>
+    <p class="double">Double outline</p>
+    <p class="groove">
+      Groove outline. This effect depends on the outline-color value.
+    </p>
+    <p class="ridge">
+      Ridge outline. This effect depends on the outline-color value.
+    </p>
+    <p class="inset">Inset outline. This depends on the outline-color value.</p>
+    <p class="outset">
+      Outset outline. This depends on the outline-color value.
+    </p>
+    <h2>outline width property:</h2>
+    <p class="one">A thin outline.</p>
+    <p class="two">A medium outline.</p>
+    <p class="three">A thick outline.</p>
+    <p class="four">A 4px thick outline.</p>
+    <h2>Outline element with shorthand.</h2>
+    <p class="five">outline: 5px dashed green</p>
+
+    <h2>The outline-offset property.</h2>
+    <p class="six">
+      This paragraph has an outline 15px outside the border edge.
+    </p>
+  </body>
+</html>
