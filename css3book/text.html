@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="us-EN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <title>Text</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      div.one {
+        border: 1px solid green;
+        padding: 8px;
+        background-color: blue;
+        color: white;
+      }
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #4caf50;
+        background-color: black;
+      }
+
+      p {
+        text-indent: 50px;
+        text-align: justify;
+        letter-spacing: 3px;
+      }
+
+      a {
+        text-decoration: none;
+        color: red;
+      }
+
+      h1.one {
+        text-align: center;
+      }
+
+      h2.two {
+        text-align: left;
+        color: white;
+      }
+
+      h3.three {
+        text-align: right;
+      }
+
+      p.lr {
+        text-align-last: right;
+      }
+
+      p.lc {
+        text-align-last: center;
+      }
+
+      p.ll {
+        text-align-last: left;
+      }
+
+      p.rtl {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
+
+      img.a {
+        vertical-align: baseline;
+      }
+
+      img.b {
+        vertical-align: text-top;
+      }
+
+      img.c {
+        vertical-align: text-bottom;
+      }
+
+      img.d {
+        vertical-align: sub;
+      }
+
+      img.e {
+        vertical-align: super;
+      }
+
+      p.uppercase {
+        text-transform: uppercase;
+      }
+
+      p.lowercase {
+        text-transform: lowercase;
+      }
+
+      p.capitalize {
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <h2>Text Formatting</h2>
+      <p>
+        This text is styled with some of the text formatting properties. The
+        heading uses text-align, text-transform and color properties.The
+        paragraph is indented, aligned and the space between character is
+        specified. The underline is removed from this colorer
+        <a href="#">"Try it Yourself"</a>
+        link.
+      </p>
+    </div>
+
+    <h1 class="one">Heading 1 (center)</h1>
+    <h2 class="two">Heading 2 (left)</h2>
+    <h3 class="three">Heading 3 (right)</h3>
+
+    <h2>
+      text-align last property specifies how to align the last line of a text.
+    </h2>
+    <p class="lr">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
+      asperiores libero. Autem, esse cum magnam tempore, ut doloremque quasi
+      omnis perferendis a laboriosam sequi enim ullam consequatur similique,
+      ipsa possimus?
+    </p>
+    <p class="lc">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas illum quasi
+      magnam autem ipsa, tempore debitis atque, porro praesentium delectus,
+      voluptatum eos eveniet? Eum commodi soluta illo possimus saepe laboriosam.
+    </p>
+    <p class="ll">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+      perferendis, ipsam consequuntur pariatur, iusto doloremque aliquam a sed
+      qui, nesciunt vero asperiores repellat ratione aut enim dolores quis!
+      Quod, perspiciatis!
+    </p>
+    <h2>direction rtl properties.</h2>
+    <p class="rtl">This text is overide to right to left.</p>
+
+    <h1>The vertical-align property:</h1>
+    <h2>vertical-align: baseline(default):</h2>
+    <p>
+      An
+      <img class="a" src="ocean.jpg" width="9" height="9" alt="" />
+      image with default alignment.
+    </p>
+
+    <p>
+      An
+      <img src="ocean.jpg" width="9" height="9" alt="" class="b" />
+      image with a text-top alignment.
+    </p>
+
+    <p>
+      An
+      <img src="ocean.jpg" width="9" height="9" alt="" class="c" />
+      image with a text-bottom alignment.
+    </p>
+
+    <p>
+      An
+      <img src="ocean.jpg" width="9" height="9" alt="" class="d" />
+      image with a text-sub alignment.
+    </p>
+
+    <p>
+      An
+      <img src="ocean.jpg" height="9" width="9" alt="" class="e" />
+      image with a text-super alignment.
+    </p>
+
+    <h2>text-transform properties:</h2>
+    <p class="uppercase">This text is transformed to uppercase.</p>
+    <p class="lowercase">This text is transformed to lowercase.</p>
+    <p class="capitalize">This text is capitalized.</p>
+  </body>
+</html>

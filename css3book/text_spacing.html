@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Text Spacing</title>
+    <style>
+      p.indent {
+        text-indent: 50px;
+      }
+
+      h2 {
+        letter-spacing: 5px;
+      }
+
+      h3 {
+        letter-spacing: -2px;
+      }
+
+      p.big {
+        line-height: 1.8;
+      }
+
+      p.small {
+        line-height: 0.7;
+      }
+
+      p.sb {
+        word-spacing: 10px;
+      }
+
+      p.ss {
+        word-spacing: -2px;
+      }
+
+      p.ws {
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Using text-indent:</h2>
+    <p class="indent">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias fugit
+      excepturi eveniet! Quaerat, repudiandae laudantium magnam eum dolor eaque
+      voluptates hic, cum tempora vel optio ut porro. Facilis, eum?
+    </p>
+    <h1>Using letter-spacing:</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+
+    <p>
+      This is a paragraph with default standard line: 110% to 120%.
+      <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      laudantium officia excepturi magnam tenetur tempora. Qui, odit sapiente
+      tempore quos minima suscipit harum. Consequuntur unde nesciunt iusto magni
+      amet quia?
+    </p>
+    <p class="small">
+      This is a paragraph with smaller line hight.
+      <br />
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad harum quod,
+      laudantium aspernatur ex voluptatem vitae, veniam ipsum omnis, quia aut in
+      reprehenderit suscipit fugiat nam quae et quas maxime.
+    </p>
+    <p class="big">
+      This is a paragraph with bigger line height.
+      <br />
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+      laborum voluptate, velit veritatis officia recusandae illo expedita,
+      facilis eaque at atque debitis sit dignissimos sequi soluta voluptatum
+      est! Enim, dolor.
+    </p>
+    <h1>Using word-spacing:</h1>
+    <p>This is paragraph with normal word spacing.</p>
+    <p class="sb">This is a paragraph with larger word spacing.</p>
+    <p class="ss">This is a paragraph with smaller word spacing.</p>
+    <h2>Disable white space:</h2>
+    <p class="ws">
+      This is some text that will not wrap. This is some text that will not
+      wrap. This is some text that will not wrap. This is some text that will
+      not wrap. This is some text that will not wrap. This is some text that
+      will not wrap. This is some text that will not wrap. This is some text
+      that will not wrap. This is some text that will not wrap.
+    </p>
+  </body>
+</html>

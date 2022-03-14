@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoint" content="width=device-width,initial-screen=1.0" />
+    <title>Text line decoration.</title>
+    <style>
+      h1 {
+        text-decoration: overline;
+        text-decoration-color: red;
+      }
+
+      h2 {
+        text-decoration: line-through;
+        text-decoration-color: green;
+      }
+
+      h3 {
+        text-decoration: underline;
+        text-decoration-color: blue;
+      }
+
+      h4 {
+        text-decoration: overline underline;
+        text-decoration-color: purple;
+      }
+
+      p.one {
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-color: red;
+        text-decoration-thickness: auto;
+      }
+
+      p.two {
+        text-decoration: underline;
+        text-decoration-style: double;
+        text-decoration-color: red;
+        text-decoration-thickness: 5px;
+      }
+
+      p.three {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-color: red;
+        text-decoration-thickness: 25%;
+      }
+
+      p.four {
+        /* text-decoration: underline;
+        text-decoration-style: dashed;
+        text-decoration-color: red; */
+        text-decoration: underline red dashed 5px;
+      }
+
+      p.five {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: red;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text decoration overline.</h1>
+    <h2>Text decoration line through.</h2>
+    <h3>Text decoration underline.</h3>
+    <h4>Text decoration overline underline.</h4>
+
+    <h1>Specify style for the decoration line:</h1>
+    <p class="one">Underline solid.</p>
+    <p class="two">Underline double.</p>
+    <p class="three">Underline dotted.</p>
+    <p class="four">Underline dashed.</p>
+    <p class="five">Underline wavy.</p>
+
+    <h1>Text decoration underline:none</h1>
+    <p>
+      A link with no underline:
+      <a href="#">google.com</a>
+    </p>
+  </body>
+</html>
