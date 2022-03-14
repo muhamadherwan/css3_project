@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viwport" content="width=device-width, inital-scale=1.0" />
+    <title>CSS box model</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: green;
+    }
+
+    div.one {
+      background-color: lightgrey;
+      width: 300px;
+      border: 15px solid green;
+      padding: 50px;
+      margin: 20px;
+    }
+
+    div.two {
+      width: 320px;
+      padding: 10px;
+      border: 5px solid gray;
+      margin: 0;
+    }
+  </style>
+  <body>
+    <h2>CSS Box Model</h2>
+    <p>
+      A box that wrap every html element.It consist of: margin,border,padding
+      and content.
+    </p>
+    <div class="one">
+      This text is the content of the box. We have added a 50px padding, 20px
+      margin and 15px green border. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Pariatur magni ipsa, totam voluptatum ipsam illo maxime
+      tenetur odio? Blanditiis hic adipisci ad quas beatae totam dicta nam.
+      Fuga, vero aut.
+    </div>
+    <h2>Calculate the box model element widh.</h2>
+    <img src="klematis4_big.jpg" alt="klematis" height="263" width="350" />
+    <div class="two">
+      The picture above is 350px wide. The total width of this element also
+      350px.
+      <br />
+      Calculation: width 320 + padding left and right (10+10) 20 + border right
+      and left (5+5) 10 = 350px.
+    </div>
+  </body>
+</html>
