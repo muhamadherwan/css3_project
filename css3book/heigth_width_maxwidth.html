@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Width Height and Max-with</title>
+    <style>
+      img.one {
+        height: auto;
+      }
+
+      img.two {
+        height: 200px;
+        width: 200px;
+      }
+
+      div.three {
+        height: 300px;
+        width: 300px;
+        background: green;
+      }
+
+      img.four {
+        height: 50%;
+        width: 50%;
+      }
+
+      div.five {
+        max-width: 400px;
+        min-width: 100px;
+        background-color: green;
+        color: black;
+      }
+
+      div.six {
+        max-height: 600px;
+        min-height: 400px;
+        background-color: green;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Set the height and width of elements</h2>
+    <p>Original image:</p>
+    <img src="ocean.jpg" width="300" height="300" alt="" class="one" />
+    <br />
+    <p>
+      Sized image (200x200 pixels):
+    </p>
+    <img src="ocean.jpg" width="300" height="300" alt="" class="two" />
+    <br />
+
+    <p>The height and width of this div element is 300px:</p>
+    <div class="three"></div>
+    <h2>Set the hight and width in %:</h2>
+    <p>Resize the browser to see the effect.</p>
+    <p>Size image in %:</p>
+    <img src="ocean.jpg" width="300" heigth="300" alt="" class="four" />
+
+    <h2>Set the max-width and min-width element.</h2>
+    <p>Resize the browser to see the effect.</p>
+    <div class="five">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      aperiam perferendis, vitae veniam corrupti nemo cumque, repellendus
+      inventore quisquam ipsa sit enim at atque. Praesentium modi reiciendis
+      architecto veniam omnis.
+    </div>
+
+    <h2>Set the max-height and min-height</h2>
+    <p>Resize the browser to see the effect.</p>
+    <div class="six">
+      This is some text. This is some text. This is some text. This is some
+      text. This is some text. This is some text. This is some text. This is
+      some text. This is some text.
+    </div>
+  </body>
+</html>
