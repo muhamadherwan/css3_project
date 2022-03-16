@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,inital-scale=1.0" />
+    <title>List style</title>
+    <style>
+      ul.a {
+        list-style-type: circle;
+      }
+      ul.b {
+        list-style-type: square;
+      }
+      ol.c {
+        list-style-type: upper-roman;
+      }
+      ol.d {
+        list-style-type: lower-alpha;
+      }
+
+      ul.e {
+        list-style-image: url('programming.gif');
+        list-style-position: inside;
+      }
+
+      ul.f {
+        list-style-position: outside;
+      }
+
+      ul.g {
+        list-style-position: inside;
+      }
+
+      ol.c1 { background: #ff9999; padding: 20px;}
+
+      ol.c1 li {
+        background: #ffe5e5;
+        color: darkred;
+        padding: 5px;
+        margin-left: 35px;
+      }
+
+      ul.c2 {
+        background: #cce5ff;
+        padding: 20px;
+      }
+
+      ul.c2 li {
+        background: #cce5ff;
+        color: darkblue;
+        margin: 5px;
+        list-style-type: square;
+      }
+
+      ul.c3 {
+        border-left: 5px solid red;
+        background-color: #f1f1f1;
+        list-style-type: none;
+        padding: 10px 20px;
+      }
+
+      ul.c4 {
+        list-style-type: none;
+        padding: 0;
+        border: 1px solid #ddd;
+      }
+
+      ul.c4 li {
+        padding: 8px 16px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      ul.c4 li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>list-style-type property</h1>
+    <p>Example of unordered lists:</p>
+    <ul class="a">
+      <li>coffee</li>
+      <li>tea</li>
+      <li>coca-cola</li>
+    </ul>
+    <ul class="b">
+      <li>coffee</li>
+      <li>tea</li>
+      <li>coca-cola</li>
+    </ul>
+
+    <p>Example of ordered lists:</p>
+    <ol class="c">
+      <li>coffee</li>
+      <li>tea</li>
+      <li>coca-cola</li>
+    </ol>
+    <ol class="d">
+      <li>coffee</li>
+      <li>tea</li>
+      <li>coca-cola</li>
+    </ol>
+
+    <p>Example of image as list item marker:</p>
+    <ul class="e">
+      <li>coffee</li>
+      <li>tea</li>
+      <li>coca-cola</li>
+    </ul>
+
+    <h1>The list-style-position property:</h1>
+    <h2>list-style-position:outside (default)</h2>
+    <ul class="f">
+      <li>
+        Coffee - A brewed drink prepared from roasted coffee beans, which are
+        seeds of the berries from the Coffea plant.
+      </li>
+      <li>
+        Tea - An aromatic beverage commonly prepared by pouring hot or boiling
+        water over cured leaves of the Camellia sinensis, an evergreen
+        shrub(bush) native to Asia.
+      </li>
+      <li>
+        Coca Cola - A carbonated soft drink produced by The Coca-Cola Company.
+        The drink's name refers to of its original ingredients, which were kola
+        nuts (a source of caffeine) and coca leaves.
+      </li>
+    </ul>
+
+     <h2>list-style-position:inside</h2>
+      <ul class="g">
+      <li>
+        Coffee - A brewed drink prepared from roasted coffee beans, which are
+        seeds of the berries from the Coffea plant.
+      </li>
+      <li>
+        Tea - An aromatic beverage commonly prepared by pouring hot or boiling
+        water over cured leaves of the Camellia sinensis, an evergreen
+        shrub(bush) native to Asia.
+      </li>
+      <li>
+        Coca Cola - A carbonated soft drink produced by The Coca-Cola Company.
+        The drink's name refers to of its original ingredients, which were kola
+        nuts (a source of caffeine) and coca leaves.
+      </li>
+
+      <h2>Style list with color:</h2>
+
+      <ol class="c1">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>coca cola</li>
+      </ol>
+
+      <ul class="c2">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>coca cola</li>
+      </ul>
+
+      <h2>List with red left border:</h2>
+      <ul class="c3">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>coca cola</li>
+      </ul>
+
+      <h2>A boardered list</h2>
+      <ul class="c4">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>coca cola</li>
+      </ul>
+  </body>
+</html>
