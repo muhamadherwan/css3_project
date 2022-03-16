@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Hidden</title>
+    <style>
+      .imgbox {
+        float: left;
+        text-align: center;
+        width: 120px;
+        border: 1px solid grey;
+        margin: 4px;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>The difference between display:none and visibility:hidden</h3>
+    <p>
+      <strong>visibility: hidden</strong>
+      hide the element but it still take space in the layout.
+    </p>
+    <p>
+      <strong>display: none</strong>
+      hide the element but and does not take up any space.
+    </p>
+
+    <div class="imgbox" id="imgbox1">
+      Box 1
+      <br />
+      <img src="img_5terre.jpg" alt="italy" style="width: 100%;" />
+      <button onclick="displayNone()">display:none</button>
+    </div>
+
+    <div class="imgbox" id="imgbox2">
+      Box 2
+      <br />
+      <img src="img_lights.jpg" alt="img_lights" style="width: 100%;" />
+      <button onclick="visibilityHidden()">visibility:hidden</button>
+    </div>
+
+    <div class="imgbox" id="imgbox3">
+      Box3
+      <br />
+      <img src="img_forest.jpg" alt="forest" style="width: 100%;" />
+      <button onclick="resetAll()">Reset All</button>
+    </div>
+
+    <script>
+      function displayNone() {
+        document.querySelector('#imgbox1').style.display = 'none'
+      }
+
+      function visibilityHidden() {
+        document.querySelector('#imgbox2').style.visibility = 'hidden'
+      }
+
+      function resetAll() {
+        document.getElementById('imgbox1').style.display = 'block'
+
+        document.getElementById('imgbox2').style.visibility = 'visible'
+      }
+    </script>
+  </body>
+</html>

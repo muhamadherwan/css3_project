@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>CSS Display</title>
+  <style>
+    .one a {
+      display: block;
+    }
+
+    li {
+      display: inline;
+    }
+
+    h1.none {
+      display: none;
+    }
+
+    h1.hidden {
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <h2>Display links as block element:</h2>
+    <div class="one">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JavaScript</a>
+    </div>
+    <h2>Display list as inline</h2>
+    <ul>
+      <li>coffee</li>
+      <li>tea</li>
+      <li>coca cola</li>
+    </ul>
+    <h1>This is a visible heading.</h1>
+    <h1 class="none">This is a hidden heading.</h1>
+    <p>h1 with display: none; does not take up any space.</p>
+    <h1>This is a visible heading.</h1>
+    <h1 class="hidden">This is a hidden heading.</h1>
+    <p>h1 with visibility: hidden; still hidden but takes up space.</p>
+  </body>
+</html>
