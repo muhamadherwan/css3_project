@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Style</title>
+    <style>
+      #customers {
+        font-family: Aril, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #customers td,
+      #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+
+      #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      #customers tr:hover {
+        background-color: #ddd;
+      }
+
+      #customers th {
+        background-color: green;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        color: white;
+      }
+
+      table.horizontal {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.horizontal th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+
+      table.horizontal tr:hover {
+        background-color: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table Borders:</h1>
+    <h2>A Fancy Table</h2>
+
+    <table id="customers">
+      <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Araknet</td>
+        <td>Ezzi Morales</td>
+        <td>Cuba</td>
+      </tr>
+      <tr>
+        <td>Meta</td>
+        <td>Zuck</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>Mayaliti</td>
+        <td>Obiwan</td>
+        <td>Malaysia</td>
+      </tr>
+      <tr>
+        <td>Gent Coins</td>
+        <td>Nick</td>
+        <td>USA</td>
+      </tr>
+    </table>
+
+    <h2>Horizontal Divider table style</h2>
+    <table class="horizontal">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Point</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Parker</td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td>Ben</td>
+        <td>Grim</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Wade</td>
+        <td>Wilson</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>Reed</td>
+        <td>Richard</td>
+        <td>100</td>
+      </tr>
+    </table>
+  </body>
+</html>
