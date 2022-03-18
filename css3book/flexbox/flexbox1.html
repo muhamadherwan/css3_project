@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html language="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-width=1.0" />
+    <style>
+      .flex-container {
+        display: flex;
+        background: blue;
+      }
+
+      .flex-container > div {
+        background-color: white;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+    </style>
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <p>
+      A flexiable layout must have a parent element with
+      <em>display</em>
+      property set to
+      <em>flex</em>
+      .
+    </p>
+    <p>
+      Direct child element(s) of the flexiable containter automaticly become
+      flexible items.
+    </p>
+  </body>
+</html>
