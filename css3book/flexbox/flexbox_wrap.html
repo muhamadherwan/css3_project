@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Flexbox-wrap</title>
+    <style>
+      body {
+        background-color: #edd7f1;
+      }
+      .flex-container-nowrap {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: #995db5;
+      }
+
+      .flex-container-nowrap > div {
+        background-color: #f7942d;
+        font-size: 30px;
+        margin: 10px;
+        line-height: 70px;
+        width: 100px;
+        text-align: center;
+      }
+
+      .flex-container-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #995db5;
+      }
+
+      .flex-container-wrap > div {
+        background-color: #f7942d;
+        width: 100px;
+        margin: 10px;
+        line-height: 70px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .flex-container-wrap-reverse {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        background-color: #995db5;
+      }
+
+      .flex-container-wrap-reverse > div {
+        background-color: #f7942d;
+        width: 100px;
+        margin: 10px;
+        line-height: 70px;
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .flex-container-flex-flow {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #995db5;
+      }
+
+      .flex-container-flex-flow > div {
+        background-color: #f7942d;
+        width: 100px;
+        margin: 10px;
+        line-height: 70px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>flex-wrap: nowrap</h2>
+    <p>(default): all flex items will be on one line</p>
+    <div class="flex-container-nowrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <h2>flex-wrap: wrap</h2>
+    <p>flex items will wrap onto multiple lines, from top to bottom..</p>
+    <div class="flex-container-wrap">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <h2>flex-wrap: wrap-reverse</h2>
+    <p>flex items will wrap onto multiple lines, from bottom to top.</p>
+    <div class="flex-container-wrap-reverse">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+    <h2>flex-flow</h2>
+    <p>
+      Shorthand for flex-direction and flex-wrap which together defines the flex
+      container main and cross axes.
+    </p>
+    <div class="flex-container-flex-flow">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+  </body>
+</html>
