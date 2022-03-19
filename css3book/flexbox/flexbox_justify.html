@@ -34,6 +34,21 @@
         text-align: center;
         font-size: 30px;
       }
+
+      .flex-container-jend {
+        display: flex;
+        justify-content: end;
+        background-color: black;
+      }
+
+      .flex-container-jend > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        background-color: green;
+        font-size: 30px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -48,6 +63,14 @@
     <h2>justify-content: start</h2>
     <p>item are packed at the start of the container.</p>
     <div class="flex-container-jstart">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>justify-content: end</h2>
+    <p>item are packed at the end of the container.</p>
+    <div class="flex-container-jend">
       <div>1</div>
       <div>2</div>
       <div>3</div>
