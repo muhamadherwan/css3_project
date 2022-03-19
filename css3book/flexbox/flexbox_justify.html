@@ -49,6 +49,21 @@
         font-size: 30px;
         text-align: center;
       }
+
+      .flex-container-jspace-around {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+      }
+
+      .flex-container-jspace-around > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        background-color: green;
+        font-size: 30px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -71,6 +86,14 @@
     <h2>justify-content: end</h2>
     <p>item are packed at the end of the container.</p>
     <div class="flex-container-jend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>justify-content: space-around</h2>
+    <p>display the item with space before, between and after lines:</p>
+    <div class="flex-container-jspace-around">
       <div>1</div>
       <div>2</div>
       <div>3</div>
