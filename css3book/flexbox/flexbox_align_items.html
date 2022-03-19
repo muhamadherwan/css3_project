@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>
+      Flexbox align-items
+    </title>
+    <style>
+      .flex-container-acenter {
+        display: flex;
+        height: 200px;
+        align-items: center;
+        background-color: black;
+      }
+
+      .flex-container-acenter > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: green;
+      }
+
+      .flex-container-aflexstart {
+        display: flex;
+        height: 200px;
+        align-items: flex-start;
+        background-color: black;
+      }
+
+      .flex-container-aflexstart > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: green;
+      }
+
+      .flex-container-aflexend {
+        display: flex;
+        height: 200px;
+        align-items: flex-end;
+        background-color: black;
+      }
+
+      .flex-container-aflexend > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: green;
+      }
+
+      .flex-container-astretch {
+        display: flex;
+        height: 200px;
+        align-items: stretch;
+        background-color: black;
+      }
+
+      .flex-container-astretch > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: green;
+      }
+
+      .flex-container-abaseline {
+        display: flex;
+        height: 200px;
+        align-items: baseline;
+        background-color: black;
+      }
+
+      .flex-container-abaseline > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        font-size: 30px;
+        text-align: center;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>align-items: center</h2>
+    <p>align the flex item in the middle of the container.</p>
+    <div class="flex-container-acenter">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>align-items: flex-start</h2>
+    <p>align the flex item in the top of the container.</p>
+    <div class="flex-container-aflexstart">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>align-items: flex-end</h2>
+    <p>align the flex item in the bottom of the container.</p>
+    <div class="flex-container-aflexend">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>align-items: strecth</h2>
+    <p>strech the flex item to fill the container. this is the default.</p>
+    <div class="flex-container-astretch">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>align-items: baseline</h2>
+    <p>align the flex item such as their baseline align.</p>
+    <div class="flex-container-abaseline">
+      <div><h1>1</h1></div>
+      <div><h6>2</h6></div>
+      <div><h3>3</h3></div>
+      <div><small>4</small></div>
+    </div>
+  </body>
+</html>
