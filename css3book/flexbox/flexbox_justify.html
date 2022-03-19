@@ -64,6 +64,21 @@
         font-size: 30px;
         text-align: center;
       }
+
+      .flex-container-jspace-between {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+      }
+
+      .flex-container-jspace-between > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        background-color: green;
+        font-size: 30px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -94,6 +109,14 @@
     <h2>justify-content: space-around</h2>
     <p>display the item with space before, between and after lines:</p>
     <div class="flex-container-jspace-around">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>justify-content: space-between</h2>
+    <p>display the item with space between the line.</p>
+    <div class="flex-container-jspace-between">
       <div>1</div>
       <div>2</div>
       <div>3</div>
