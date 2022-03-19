@@ -79,6 +79,21 @@
         font-size: 30px;
         text-align: center;
       }
+
+      .flex-container-jspace-evently {
+        display: flex;
+        justify-content: space-evently;
+        background-color: black;
+      }
+
+      .flex-container-jspace-evently > div {
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        background-color: green;
+        font-size: 30px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -117,6 +132,17 @@
     <h2>justify-content: space-between</h2>
     <p>display the item with space between the line.</p>
     <div class="flex-container-jspace-between">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+
+    <h2>justify-content: space-evenly</h2>
+    <p>
+      display the item with space between any two items and the space to the
+      edge is equal.
+    </p>
+    <div class="flex-container-jspace-evently">
       <div>1</div>
       <div>2</div>
       <div>3</div>
