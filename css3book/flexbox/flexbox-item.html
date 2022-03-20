@@ -49,6 +49,21 @@
         text-align: center;
         font-size: 30px;
       }
+
+      .flex-container-align-self {
+        display: flex;
+        height: 200px;
+        background-color: black;
+      }
+
+      .flex-container-align-self > div {
+        background-color: green;
+        width: 100px;
+        line-height: 70px;
+        margin: 10px;
+        text-align: center;
+        font-size: 30px;
+      }
     </style>
   </head>
   <body>
@@ -103,6 +118,15 @@
       <div>1</div>
       <div>2</div>
       <div style="flex: 0 0 200px;">3</div>
+      <div>4</div>
+    </div>
+
+    <h2>align-self</h2>
+    <p>override default aligment set by the container align-items property.</p>
+    <div class="flex-container-align-self">
+      <div>1</div>
+      <div>2</div>
+      <div style="align-self: center;">3</div>
       <div>4</div>
     </div>
   </body>
