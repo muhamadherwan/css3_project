@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Flexbox responsive web layout</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* style the body */
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+
+      /* header / logo title */
+      .header {
+        padding: 60px;
+        text-align: center;
+        background: green;
+        color: white;
+      }
+
+      /* style the top navigation bar */
+      .navbar {
+        display: flex;
+        background-color: #333;
+      }
+
+      .navbar a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* column container */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      /* create two unequal columns that sits next to each other */
+
+      /* sidebar / left column */
+      .side {
+        flex: 30%;
+        background-color: #f1f1f1;
+        padding: 20px;
+      }
+
+      /* main colmn */
+      .main {
+        flex: 70%;
+        background-color: white;
+        padding: 20px;
+      }
+
+      /* fake image style */
+      .fakeimg {
+        background-color: #aaa;
+        width: 100%;
+        padding: 20px;
+      }
+
+      /* footer */
+      .footer {
+        padding: 20px;
+        text-align: center;
+        background: #ddd;
+      }
+
+      /* responsive layout - when screen is less then 700px wide, make two columns stack on top of each other istead of next to each other */
+      @media screen and (max-width: 700px) {
+        .row,
+        .navbar {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h1>My Website</h1>
+      <p>flexbox and responsive layout.</p>
+    </div>
+
+    <!-- navigation bar -->
+    <div class="navbar">
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+      <a href="#">Link</a>
+    </div>
+
+    <!-- the flexible grid content -->
+    <div class="row">
+      <!-- side -->
+      <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p>
+          Some text about me Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit...
+        </p>
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <div class="fakeimg" style="height: 60px;">Image</div>
+        <div class="fakeimg" style="height: 60px;">Image</div>
+        <div class="fakeimg" style="height: 60px;">Image</div>
+      </div>
+
+      <!-- main -->
+      <div class="main">
+        <h2>Title Heading</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p>some text...</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ullam
+          similique excepturi nulla saepe molestiae sapiente assumenda inventore
+          consequuntur, eaque perferendis omnis obcaecati debitis voluptate sed
+          incidunt quia modi impedit!
+        </p>
+        <br />
+        <h2>Title Heading</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p>some text...</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ullam
+          similique excepturi nulla saepe molestiae sapiente assumenda inventore
+          consequuntur, eaque perferendis omnis obcaecati debitis voluptate sed
+          incidunt quia modi impedit!
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer"><h2>footer</h2></div>
+  </body>
+</html>
