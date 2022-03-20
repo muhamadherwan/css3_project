@@ -7,10 +7,6 @@ body {
   font-family: Arial;
 }
 
-img {
-  width: 100%;
-}
-
 .header {
   text-align: center;
   padding: 32px;
@@ -28,6 +24,16 @@ img {
   max-width: 25%;
   padding: 0 4px;
 }
+
+img {
+  width: 100%;
+  /* transition: all 1s; */
+}
+
+/* img:hover {
+  transform: scale(1.1);
+  /* border: 10px solid green; */
+} */
 
 .column img {
   margin-top: 8px;
